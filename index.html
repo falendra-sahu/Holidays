@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Indian Holidays 2024</title>
+    <title>Holidays</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -68,6 +68,17 @@
         tbody tr:hover {
             background-color: #f9f9f9;
         }
+        .highlight {
+            background-color: #ffeeba; /* Highlight color */
+        }
+        @media (max-width: 600px) {
+            .search-container {
+                flex-direction: column;
+            }
+            input[type="text"], button {
+                margin-bottom: 10px;
+            }
+        }
         footer {
             margin-top: 20px;
             font-size: 14px;
@@ -82,25 +93,18 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .count {
-            text-align: center;
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Indian Holidays 2024</h1>
+    <h1>Holidays</h1>
     
     <div class="search-container">
         <input type="text" id="search" placeholder="Search Holidays..." onkeyup="filterTable()">
         <button onclick="clearSearch()">Clear</button>
     </div>
-
-    <div class="count" id="holidayCount">Total Holidays: 67</div> <!-- Total holidays count -->
-
+    
     <table id="holidayTable">
         <caption>List of Holidays</caption>
         <thead>
@@ -113,383 +117,383 @@
         <tbody>
             <tr>
                 <td>New Year's Day</td>
-                <td>01-01-2024</td>
-                <td>Monday</td>
+              <td>01-01-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Lohri</td>
-                <td>13-01-2024</td>
-                <td>Saturday</td>
+              <td>Lohri</td>
+              <td>13-01-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Makar Sankranti</td>
-                <td>14-01-2024</td>
-                <td>Sunday</td>
+              <td>Makar Sankranti</td>
+              <td>14-01-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Pongal</td>
-                <td>15-01-2024</td>
-                <td>Monday</td>
+              <td>Pongal</td>
+              <td>15-01-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Guru Govind Singh Jayanti</td>
-                <td>17-01-2024</td>
-                <td>Wednesday</td>
+              <td>Guru Govind Singh Jayanti</td>
+              <td>17-01-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Hazarat Ali's Birthday</td>
-                <td>25-01-2024</td>
-                <td>Thursday</td>
+              <td>Hazarat Ali's Birthday</td>
+              <td>25-01-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Republic Day</td>
-                <td>26-01-2024</td>
-                <td>Friday</td>
+              <td>Republic Day</td>
+              <td>26-01-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Lunar New Year</td>
-                <td>10-02-2024</td>
-                <td>Saturday</td>
+              <td>Lunar New Year</td>
+              <td>10-02-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Vasant Panchami</td>
-                <td>14-02-2024</td>
-                <td>Wednesday</td>
+              <td>Vasant Panchami</td>
+              <td>14-02-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Valentine's Day</td>
-                <td>14-02-2024</td>
-                <td>Wednesday</td>
+              <td>Valentine's Day</td>
+              <td>14-02-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Shivaji Jayanti</td>
-                <td>19-02-2024</td>
-                <td>Monday</td>
+              <td>Shivaji Jayanti</td>
+              <td>19-02-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Guru Ravidas Jayanti</td>
-                <td>24-02-2024</td>
-                <td>Saturday</td>
+              <td>Guru Ravidas Jayanti</td>
+              <td>24-02-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Maharishi Dayanand Saraswati Jayanti</td>
-                <td>06-03-2024</td>
-                <td>Wednesday</td>
+              <td>Maharishi Dayanand Saraswati Jayanti</td>
+              <td>06-03-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Maha Shivaratri/Shivaratri</td>
-                <td>08-03-2024</td>
-                <td>Friday</td>
+              <td>Maha Shivaratri/Shivaratri</td>
+              <td>08-03-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Ramadan Start</td>
-                <td>12-03-2024</td>
-                <td>Tuesday</td>
+              <td>Ramadan Start</td>
+              <td>12-03-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>March Equinox</td>
-                <td>20-03-2024</td>
-                <td>Wednesday</td>
+              <td>March Equinox</td>
+              <td>20-03-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Holika Dahana</td>
-                <td>24-03-2024</td>
-                <td>Sunday</td>
+              <td>Holika Dahana</td>
+              <td>24-03-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Holi</td>
-                <td>25-03-2024</td>
-                <td>Monday</td>
+              <td>Holi</td>
+              <td>25-03-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Dolyatra</td>
-                <td>25-03-2024</td>
-                <td>Monday</td>
+              <td>Dolyatra</td>
+              <td>25-03-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Maundy Thursday</td>
-                <td>28-03-2024</td>
-                <td>Thursday</td>
+              <td>Maundy Thursday</td>
+              <td>28-03-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Good Friday</td>
-                <td>29-03-2024</td>
-                <td>Friday</td>
+              <td>Good Friday</td>
+              <td>29-03-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Easter Day</td>
-                <td>31-03-2024</td>
-                <td>Sunday</td>
+              <td>Easter Day</td>
+              <td>31-03-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Jamat Ul-Vida (Tentative Date)</td>
-                <td>05-04-2024</td>
-                <td>Friday</td>
+              <td>Jamat Ul-Vida (Tentative Date)</td>
+              <td>05-04-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Chaitra Sukhladi</td>
-                <td>09-04-2024</td>
-                <td>Tuesday</td>
+              <td>Chaitra Sukhladi</td>
+              <td>09-04-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>Ugadi</td>
-                <td>09-04-2024</td>
-                <td>Tuesday</td>
+              <td>Ugadi</td>
+              <td>09-04-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>Gudi Padwa</td>
-                <td>09-04-2024</td>
-                <td>Tuesday</td>
+              <td>Gudi Padwa</td>
+              <td>09-04-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>Ramzan Id/Eid-ul-Fitr</td>
-                <td>10-04-2024</td>
-                <td>Wednesday</td>
+              <td>Ramzan Id/Eid-ul-Fitr</td>
+              <td>10-04-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Ramzan Id/Eid-ul-Fitr</td>
-                <td>11-04-2024</td>
-                <td>Thursday</td>
+              <td>Ramzan Id/Eid-ul-Fitr</td>
+              <td>11-04-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Vaisakhi</td>
-                <td>13-04-2024</td>
-                <td>Saturday</td>
+              <td>Vaisakhi</td>
+              <td>13-04-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Mesadi / Vaisakhadi</td>
-                <td>14-04-2024</td>
-                <td>Sunday</td>
+              <td>Mesadi / Vaisakhadi</td>
+              <td>14-04-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Ambedkar Jayanti</td>
-                <td>14-04-2024</td>
-                <td>Sunday</td>
+              <td>Ambedkar Jayanti</td>
+              <td>14-04-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Rama Navami</td>
-                <td>17-04-2024</td>
-                <td>Wednesday</td>
+              <td>Rama Navami</td>
+              <td>17-04-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Mahavir Jayanti</td>
-                <td>21-04-2024</td>
-                <td>Sunday</td>
+              <td>Mahavir Jayanti</td>
+              <td>21-04-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>First day of Passover</td>
-                <td>23-04-2024</td>
-                <td>Tuesday</td>
+              <td>First day of Passover</td>
+              <td>23-04-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>International Worker's Day</td>
-                <td>01-05-2024</td>
-                <td>Wednesday</td>
+              <td>International Worker's Day</td>
+              <td>01-05-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Birthday of Rabindranath</td>
-                <td>08-05-2024</td>
-                <td>Wednesday</td>
+              <td>Birthday of Rabindranath</td>
+              <td>08-05-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Mothers' Day</td>
-                <td>12-05-2024</td>
-                <td>Sunday</td>
+              <td>Mothers' Day</td>
+              <td>12-05-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Buddha Purnima/Vesak</td>
-                <td>23-05-2024</td>
-                <td>Thursday</td>
+              <td>Buddha Purnima/Vesak</td>
+              <td>23-05-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Fathers' Day</td>
-                <td>16-06-2024</td>
-                <td>Sunday</td>
+              <td>Fathers' Day</td>
+              <td>16-06-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Bakrid/Eid ul-Adha</td>
-                <td>17-06-2024</td>
-                <td>Monday</td>
+              <td>Bakrid/Eid ul-Adha</td>
+              <td>17-06-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>June Solstice</td>
-                <td>21-06-2024</td>
-                <td>Friday</td>
+              <td>June Solstice</td>
+              <td>21-06-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Rath Yatra</td>
-                <td>07-07-2024</td>
-                <td>Sunday</td>
+              <td>Rath Yatra</td>
+              <td>07-07-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Muharram/Ashura</td>
-                <td>17-07-2024</td>
-                <td>Wednesday</td>
+              <td>Muharram/Ashura</td>
+              <td>17-07-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Guru Purnima</td>
-                <td>21-07-2024</td>
-                <td>Sunday</td>
+              <td>Guru Purnima</td>
+              <td>21-07-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Friendship Day</td>
-                <td>04-08-2024</td>
-                <td>Sunday</td>
+              <td>Friendship Day</td>
+              <td>04-08-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Independence Day</td>
-                <td>15-08-2024</td>
-                <td>Thursday</td>
+              <td>Independence Day</td>
+              <td>15-08-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Parsi New Year</td>
-                <td>15-08-2024</td>
-                <td>Thursday</td>
+              <td>Parsi New Year</td>
+              <td>15-08-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Raksha Bandhan (Rakhi)</td>
-                <td>19-08-2024</td>
-                <td>Monday</td>
+              <td>Raksha Bandhan (Rakhi)</td>
+              <td>19-08-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Janmashtami</td>
-                <td>26-08-2024</td>
-                <td>Monday</td>
+              <td>Janmashtami</td>
+              <td>26-08-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Janmashtami (Smarta)</td>
-                <td>26-08-2024</td>
-                <td>Monday</td>
+              <td>Janmashtami (Smarta)</td>
+              <td>26-08-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>Ganesh Chaturthi/Vinayaka Chaturthi</td>
-                <td>07-09-2024</td>
-                <td>Saturday</td>
+              <td>Ganesh Chaturthi/Vinayaka Chaturthi</td>
+              <td>07-09-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Onam</td>
-                <td>15-09-2024</td>
-                <td>Sunday</td>
+              <td>Onam</td>
+              <td>15-09-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Milad un-Nabi/Id-e-Milad (Tentative)</td>
-                <td>16-09-2024</td>
-                <td>Monday</td>
+              <td>Milad un-Nabi/Id-e-Milad (Tentative)</td>
+              <td>16-09-2024</td>
+              <td>Monday</td>
             </tr>
             <tr>
-                <td>September Equinox</td>
-                <td>22-09-2024</td>
-                <td>Sunday</td>
+              <td>September Equinox</td>
+              <td>22-09-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Mahatma Gandhi Jayanti</td>
-                <td>02-10-2024</td>
-                <td>Wednesday</td>
+              <td>Mahatma Gandhi Jayanti</td>
+              <td>02-10-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>First Day of Sharad Navratri</td>
-                <td>03-10-2024</td>
-                <td>Thursday</td>
+              <td>First Day of Sharad Navratri</td>
+              <td>03-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>First Day of Durga Puja Festivities</td>
-                <td>09-10-2024</td>
-                <td>Wednesday</td>
+              <td>First Day of Durga Puja Festivities</td>
+              <td>09-10-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>Maha Saptami</td>
-                <td>10-10-2024</td>
-                <td>Thursday</td>
+              <td>Maha Saptami</td>
+              <td>10-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Maha Navami</td>
-                <td>11-10-2024</td>
-                <td>Friday</td>
+              <td>Maha Navami</td>
+              <td>11-10-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Maha Ashtami</td>
-                <td>11-10-2024</td>
-                <td>Friday</td>
+              <td>Maha Ashtami</td>
+              <td>11-10-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Dussehra</td>
-                <td>12-10-2024</td>
-                <td>Saturday</td>
+              <td>Dussehra</td>
+              <td>12-10-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Maharishi Valmiki Jayanti</td>
-                <td>17-10-2024</td>
-                <td>Thursday</td>
+              <td>Maharishi Valmiki Jayanti</td>
+              <td>17-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Karaka Chaturthi (Karva Chauth)</td>
-                <td>20-10-2024</td>
-                <td>Sunday</td>
+              <td>Karaka Chaturthi (Karva Chauth)</td>
+              <td>20-10-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Halloween</td>
-                <td>31-10-2024</td>
-                <td>Thursday</td>
+              <td>Halloween</td>
+              <td>31-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Naraka Chaturdasi</td>
-                <td>31-10-2024</td>
-                <td>Thursday</td>
+              <td>Naraka Chaturdasi</td>
+              <td>31-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Diwali/Deepavali</td>
-                <td>31-10-2024</td>
-                <td>Thursday</td>
+              <td>Diwali/Deepavali</td>
+              <td>31-10-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Govardhan Puja</td>
-                <td>02-11-2024</td>
-                <td>Saturday</td>
+              <td>Govardhan Puja</td>
+              <td>02-11-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Bhai Duj</td>
-                <td>03-11-2024</td>
-                <td>Sunday</td>
+              <td>Bhai Duj</td>
+              <td>03-11-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>Chhat Puja (Pratihar Sashthi/Surya)</td>
-                <td>07-11-2024</td>
-                <td>Thursday</td>
+              <td>Chhat Puja (Pratihar Sashthi/Surya)</td>
+              <td>07-11-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>Guru Nanak Jayanti</td>
-                <td>15-11-2024</td>
-                <td>Friday</td>
+              <td>Guru Nanak Jayanti</td>
+              <td>15-11-2024</td>
+              <td>Friday</td>
             </tr>
             <tr>
-                <td>Guru Tegh Bahadur's Martyrdom Day</td>
-                <td>24-11-2024</td>
-                <td>Sunday</td>
+              <td>Guru Tegh Bahadur's Martyrdom Day</td>
+              <td>24-11-2024</td>
+              <td>Sunday</td>
             </tr>
             <tr>
-                <td>December Solstice</td>
-                <td>21-12-2024</td>
-                <td>Saturday</td>
+              <td>December Solstice</td>
+              <td>21-12-2024</td>
+              <td>Saturday</td>
             </tr>
             <tr>
-                <td>Christmas Eve</td>
-                <td>24-12-2024</td>
-                <td>Tuesday</td>
+              <td>Christmas Eve</td>
+              <td>24-12-2024</td>
+              <td>Tuesday</td>
             </tr>
             <tr>
-                <td>Christmas</td>
-                <td>25-12-2024</td>
-                <td>Wednesday</td>
+              <td>Christmas</td>
+              <td>25-12-2024</td>
+              <td>Wednesday</td>
             </tr>
             <tr>
-                <td>First Day of Hanukkah</td>
-                <td>26-12-2024</td>
-                <td>Thursday</td>
+              <td>First Day of Hanukkah</td>
+              <td>26-12-2024</td>
+              <td>Thursday</td>
             </tr>
             <tr>
-                <td>New Year's Eve</td>
-                <td>31-12-2024</td>
-                <td>Tuesday</td>
+              <td>New Year's Eve</td>
+              <td>31-12-2024</td>
+              <td>Tuesday</td>
             </tr>
         </tbody>
     </table>
@@ -503,27 +507,46 @@
 
 <script>
     function filterTable() {
-        const input = document.getElementById('search').value.toLowerCase();
-        const table = document.getElementById('holidayTable');
-        const rows = table.getElementsByTagName('tr');
+        const searchInput = document.getElementById("search").value.toLowerCase();
+        const table = document.getElementById("holidayTable");
+        const trs = table.getElementsByTagName("tr");
 
-        for (let i = 1; i < rows.length; i++) {
-            const cells = rows[i].getElementsByTagName('td');
-            let match = false;
-            for (let j = 0; j < cells.length; j++) {
-                if (cells[j].textContent.toLowerCase().includes(input)) {
-                    match = true;
-                    break;
+        for (let i = 1; i < trs.length; i++) {
+            const tds = trs[i].getElementsByTagName("td");
+            let found = false;
+            for (let j = 0; j < tds.length; j++) {
+                if (tds[j].innerText.toLowerCase().includes(searchInput)) {
+                    found = true;
                 }
             }
-            rows[i].style.display = match ? '' : 'none';
+            trs[i].style.display = found ? "" : "none";
         }
     }
 
     function clearSearch() {
-        document.getElementById('search').value = '';
+        document.getElementById("search").value = '';
         filterTable();
     }
+
+    // Highlight holidays in the current month
+    function highlightCurrentMonthHolidays() {
+        const currentMonth = new Date().getMonth() + 1; // Get current month (0-11)
+        const rows = document.querySelectorAll("#holidayTable tbody tr");
+
+        rows.forEach(row => {
+            const dateCell = row.cells[1].innerText; // Get date cell
+            const day = parseInt(dateCell.split('-')[0]); // Get day
+            const month = parseInt(dateCell.split('-')[1]); // Get month
+
+            if (month === currentMonth) {
+                row.classList.add('highlight'); // Add highlight class
+            }
+        });
+    }
+
+    // Call the function on page load
+    window.onload = highlightCurrentMonthHolidays;
+
 </script>
 
 </body>
