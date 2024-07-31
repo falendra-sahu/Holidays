@@ -101,12 +101,12 @@
     <h1>Holidays 2024</h1>
     
     <div class="search-container">
-        <input type="text" id="search" placeholder="Search Holidays 2024..." onkeyup="filterTable()">
+        <input type="text" id="search" placeholder="Search Holidays..." onkeyup="filterTable()">
         <button onclick="clearSearch()">Clear</button>
     </div>
     
     <table id="holidayTable">
-        <caption>List of Holidays 2024</caption>
+        <caption>List of Holidays</caption>
         <thead>
             <tr>
                 <th>Holiday</th>
@@ -490,15 +490,10 @@
               <td>26-12-2024</td>
               <td>Thursday</td>
             </tr>
-            <tr>
-              <td>New Year's Eve</td>
-              <td>31-12-2024</td>
-              <td>Tuesday</td>
-            </tr>
         </tbody>
     </table>
 
-    <p style="text-align: center; margin-top: 20px;">Last Updated: 01-01-2024</p>
+    <p style="text-align: center; margin-top: 20px;">Last Updated: 12-02-2024</p>
 </div>
 
 <footer>
@@ -528,8 +523,8 @@
         filterTable();
     }
 
-    // Highlight Holidays 2024 in the current month
-    function highlightCurrentMonthHolidays 2024() {
+    // Highlight holidays in the current month
+    function highlightCurrentMonthHolidays() {
         const currentMonth = new Date().getMonth() + 1; // Get current month (0-11)
         const rows = document.querySelectorAll("#holidayTable tbody tr");
 
@@ -545,7 +540,7 @@
     }
 
     // Call the function on page load
-    window.onload = highlightCurrentMonthHolidays 2024;
+    window.onload = highlightCurrentMonthHolidays;
 
 </script>
 
